@@ -1,0 +1,374 @@
+.all-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    margin-top: 5px;
+  }
+
+ .dropdown-menu{
+  right: 0;
+  border-color: black ;
+  border-top: 1px;
+  z-index: 1;
+ }
+  
+  .dropdown:hover ,
+  .dropdown-menu {
+    display: block;
+  }
+
+  
+  .dropdown-menu li {
+    padding: 8px 15px;
+    width: 150px;
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-icon {
+    margin-left: 8px;
+    color: #333;
+    margin-top: 5px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 100px;
+  }
+  .list{
+    z-index: 1;
+  }
+  
+  .nav-item .list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item .item {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+  }
+  .item{
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-item .item:hover  {
+    color: #f39c12;
+  }
+
+  .dropdown-menu a:hover 
+  , .other-item:hover,
+  .account-button:hover {
+    color: #f39c12;
+  }
+
+
+  .nav-item .item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-item .item:hover svg {
+    transform: rotate(180deg);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+    width: 500px;
+  }
+  
+  .other-item{
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+
+  .input-bar {
+    border: none;
+    outline: none;
+    width:  100%;
+    padding: 5px;
+    height: 20px;
+  }
+  
+  .search-bar svg {
+    margin-left: 5px;
+    color: #333;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info .account,
+  .info .Cart {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info span {
+    margin-left: 5px;
+    color: #333;
+  }
+
+  .cart-button ,
+  .account-button,
+  .login-button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .account-icon ,
+  .cart-icon,
+  .login-icon{
+    margin-right: 5px;
+    size: 100px;
+  }
+  .login{
+    margin-right: 20px;
+  }
+  .login-button{
+   font-size: 15px;
+  }
+  .login-button:hover{
+    color: orange;
+  }
+  .login-text:hover{
+    color: orange;
+  }
+
+  .login-icon{
+    margin-right: 5px;
+  }
+
+  .account ,
+  .cart,
+  .login{
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .cart-button {
+    color: black;
+  }
+
+ /* .cart-icon:hover{
+  color: orange;
+  } */
+
+.cart-button:hover{
+  color: orange;
+}
+
+.dropdown-list{
+  list-style-type: none;
+  z-index: 5;
+}
+
+.logout-button{
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Mobile Menu Styles */
+.mobile-menu-button {
+  display: none;
+  cursor: pointer;
+  margin-left: 20px; 
+  color: #333;
+  font-size: 20px; 
+}
+
+.mobile-vertical-menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 16; 
+  display: none; 
+}
+
+.mobile-vertical-menu ul.vertical-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-vertical-menu .vertical-item {
+  padding: 10px 20px; 
+  border-bottom: 1px solid #ccc;
+}
+
+.mobile-vertical-menu .vertical-item:last-child {
+  border-bottom: none;
+}
+
+.mobile-vertical-menu a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-weight: bold; 
+}
+
+.mobile-vertical-menu a:hover {
+  color: #f39c12; 
+}
+
+.vertical-dropdown-menu {
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+@media (max-width: 426px) {
+  
+  .info {
+    display: none;
+  }
+  .mobile-menu-button,
+  .mobile-vertical-menu {
+    display: block;
+    cursor: pointer;
+    color: #333; 
+    font-size: 20px; 
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .logo{
+    margin-right: 10px;
+  }
+  
+  .login-button{
+    font-size: 20px;
+  }
+  .nav-item:not(.mobile-menu-button) {
+    display: none;
+  }
+  
+
+  .logo {
+    margin-left: 20px; 
+  }
+  
+  .search-bar {
+    width: 300px; 
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  
+  .input-bar {
+    display: flex;
+    width: 100%;  
+    margin-left: 10px;  
+    padding: 5px;
+    height: 20px;
+  }
+}
+
+
+
+
+
+/* Add this style to your existing CSS */
+.mobile-vertical-menu .account-button .dropdown-icon {
+  margin-left: 8px;
+  color: #333;
+  margin-top: 5px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-vertical-menu .account-button.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.mobile-vertical-menu .vertical-dropdown-menu {
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+  margin-top: 5px;
+  margin-left: 0; /* Adjust margin-left as needed */
+}
+
+.mobile-vertical-menu .vertical-dropdown-menu li {
+  padding: 8px 15px;
+  width: 150px;
+}
+
+.mobile-vertical-menu .vertical-dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.mobile-vertical-menu .vertical-item:last-child .vertical-dropdown-menu {
+  border-bottom: 1px solid #ccc;
+}
+
+.user-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+

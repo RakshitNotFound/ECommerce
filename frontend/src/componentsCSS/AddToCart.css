@@ -1,0 +1,34 @@
+
+.serial-no {
+    text-align: center;
+  }
+  
+  .product-image {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .quantity {
+    text-align: center;
+  }
+  
+  .remove-button {
+    color: red;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  .increment-quantity{
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .decrement-quantity{
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+  }
